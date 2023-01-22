@@ -1,0 +1,83 @@
+$color_text: #fff;
+$color_border: #fff;
+$color_peak: #75b6ff;
+$color_peak_1: lighten($color_peak, 2%);
+$color_peak_2: lighten($color_peak, 7%);
+$color_peak_3: lighten($color_peak, 17%);
+
+
+body {
+   background: #7aade5;
+}
+
+.logo {  
+  position: absolute;
+  left: calc(50% - 160px);
+  bottom: 25%;
+  width: 320px;
+  height: 320px; 
+  margin: auto;
+  border: 1px solid $color_border;
+  
+  background: rgb(101,174,255);
+  background: linear-gradient(0deg, 
+  rgba(101,174,255,1) 5%, 
+  rgba(173,213,255,1) 20%, 
+  rgba(122,173,229,1) 100%); 
+}
+
+.logo__peak-1 {
+  position: absolute;
+  right: 10px;
+  bottom: 65px;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 84px;
+  border-left-width: 126px;
+  border-bottom: 59px solid $color_peak_1;
+}
+
+.logo__peak-2 {
+  position: absolute;  
+  left: 10px;
+  bottom: 65px;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 99px;
+  border-left-width: 53px;
+  border-bottom: 36px solid $color_peak_2;
+}
+
+.logo__peak-3 {
+  position: absolute;
+  left: 60px;
+  bottom: 65px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 62px;
+  border-left-width: 62px;
+  border-bottom: 29px solid $color_peak_3;
+}
+
+.logo__title-box {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  /*background: #3a86d8;*/
+}
+
+.logo__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $color_text;
+  letter-spacing: 5px;
+}
+
+
