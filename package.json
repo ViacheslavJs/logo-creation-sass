@@ -2,11 +2,7 @@
   "devDependencies": {
     "node-sass": "^8.0.0"
   },
-"scripts": {
-  "sass": "sass sass/index.scss build/style.css"
+  "scripts": {
+    "sass": "sass sass/index.scss build/style.css"
+  }
 }
-
-}
-
-
-
